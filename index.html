@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Calculator</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="calculator">
+         <form>
+            <input type="text" name="result" class="result">
+			<input style="color:red;" type="button" name="clear" value="AC"; onclick="result.value = '0'">
+			<input style="color:gold;" type="button" name="operator" value="+-" onclick="result.value += '+-'">
+			<input style="color:gold;"type="button" name="operator" value="%" onclick="result.value += '%'">
+			<input  style="color:gold;"type="button" name="operator" value="/" onclick="result.value += '/'">
+			<br/>
+            <input type="button" name="number" value="7" onclick="result.value += '7'">
+            <input type="button" name="number" value="8" onclick="result.value += '8'">
+            <input type="button" name="number" value="9" onclick="result.value += '9'">
+			<input style="color:gold;" type="button" name="operator" value="*" onclick="result.value += '*'">
+            <input type="button" name="number" value="4" onclick="result.value += '4'">
+            <input type="button" name="number" value="5" onclick="result.value += '5'">
+            <input type="button" name="number" value="6" onclick="result.value += '6'">
+			<input style="color:gold;" type="button" name="operator" value="-" onclick="result.value += '-'">
+            <input type="button" name="number" value="1" onclick="result.value += '1'">
+            <input type="button" name="number" value="2" onclick="result.value += '2'">
+            <input type="button" name="number" value="3" onclick="result.value += '3'">
+			<input style="color:gold;" type="button" name="operator" value="+" onclick="result.value += '+'">
+            <input type="button" name="number" value="0" onclick="result.value += '0'">
+            <input type="button" name="operator" value="." onclick="result.value += '.'">
+			<input class="remove" type="button" name="del" value="&#9003" onclick="result.value= result.value.slice(0,-1)">
+            <input style="color:gold;" type="button" name="calculate" value="=" onclick="result.value = eval(result.value)">
+         </form>
+      </div>
+   </body>
+</html>
